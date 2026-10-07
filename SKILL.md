@@ -13,12 +13,14 @@ The team's standards live in a Notion database. This skill tells you how to read
 ## Source
 
 Standards database ("Refined Standards Table"):
+<!-- Do we want this data source ID or just a link to the view? My preference would be to link to the view of accepted standards instead, which will mean that by design - any unaccepted standards are not visible to the agent. -->
 - Data source: `collection://cac1e888-780d-4554-ae17-83ef80303e78`
 - Human-browsable view (for linking users to, not for querying): https://app.notion.com/p/c35635bd31c9455a9844a8996ff3f4bc?v=3ad4aca9ecb3804080e2000c4ed41805
 
 Do not rely on any saved view's filter or columns when querying. Views can include unapproved standards, and querying a view returns every column (votes, formulas, user IDs) regardless of which columns the view displays.
 
 ## How to read it
+<!-- Do we want this section at all? Or should we just rely on the agent knowing how to query Notion? I would say, let's start minimal and only add these sort of instructions if we see a need for them. For example - an agent may have Notion-based tools which abstract away the SQL querying and provide a higher-level interface. -->
 
 Query the data source directly with SQL, selecting only the columns you need and filtering on status:
 

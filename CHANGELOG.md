@@ -4,6 +4,10 @@ Versions track the skill protocol (retrieval logic, enforcement semantics, view 
 
 Keep `metadata.version` in `SKILL.md` in sync with the git tag.
 
+## 0.4.0
+- Replace the embedded SQL query and read workflow with a reference to the "Consume Standards" Notion skill page, which is now the live source of truth for how to find, query and apply standards.
+- `SKILL.md` no longer names the data source URL or the saved view directly; those live in the Notion skill page instead.
+
 ## 0.3.0
 - Query the data source with SQL (Status = Active, six columns) instead of a saved view. Saved views returned unapproved standards and all columns.
 - Include the data source URL and the human-browsable view link.

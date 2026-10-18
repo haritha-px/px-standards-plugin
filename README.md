@@ -57,9 +57,9 @@ Commit it. Contributors still need the Notion MCP connected. The trade-off is th
 ## Maintainers
 
 Before first use:
-- Check the data source URL in `SKILL.md` still matches the Notion database.
-- The skill queries the data source with SQL, so Notion view filters and columns do not affect it. Standards become visible to agents when their Status is set to Active.
-- Restrict edit rights on Active standards in Notion. Agents treat that content as authoritative.
+- Check the "Consume Standards" Notion skill page URL in `SKILL.md` still resolves, and that the page's instructions (how to query the database, enforcement levels, citation format) are current. Update the page in Notion to change agent behaviour; `SKILL.md` itself rarely needs to change.
+- Standards become visible to agents when their Status is set to Active.
+- Restrict edit rights on Active standards and on the "Consume Standards" skill page in Notion. Agents treat that content as authoritative.
 
 To release a change:
 1. Edit `SKILL.md`.
